@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>fetch form</title>
+    </head>
+    <body>
+        <form fetch action="resource.json" method="put">
+            <legend>Sample info:</legend>
+            <label>name:
+                <input type="text" name="name">
+            </label>
+            <label>email:
+                <input type="email" name="email">
+            </label>
+            <button type="submit">Update</button>
+        </form>
+        <aside>
+            <h1>Note</h1>
+            <p>
+                This form has a <code>fetch</code> attribute, which means
+                there is going to be a <strong>GET</strong> to <code>form.action</code>,
+                and the response will be populated into the form in accordance to
+                <code>name</code> fields.
+            </p>
+        </aside>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.11.0/fetch.min.js"></script>
+        <script src="../fetch-form.js"></script>
+    </body>
+</html>
